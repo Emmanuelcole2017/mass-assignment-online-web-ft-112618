@@ -3,5 +3,5 @@ class Person
   #your code here
   
   def initialize(attributes)
-    attributes.each{||
+    attributes.each{|key, value| send("#{key}=", value)
 end
